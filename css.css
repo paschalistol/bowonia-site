@@ -1,0 +1,206 @@
+body{
+    background-image: url("Media/bg.png");
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+
+    color:wheat;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Century Gothic", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#trailerSection{
+    text-align: center;
+}
+#trailer{
+
+    max-width: 60%;
+    min-width: 10%;
+
+}
+
+section.darker{
+    background-color: rgba(141, 49, 49,0.9);
+}
+
+section, details{
+    background-color: rgba(141, 49, 49,0.5);
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin:auto;
+    
+  }
+  
+  table, th, td{
+    border:2px solid;
+  }
+  
+  tfoot{
+    font-variant: small-caps;
+  }
+td{
+    padding-left: 0em;
+    padding-right: 0em;
+    font-size: calc(7px + 1vw);
+}
+tfoot{
+    text-align: center;
+}
+mark{
+    font-weight: bolder;
+    color: rgb(117, 39, 0);
+    background-color: goldenrod;
+}
+footer{
+    text-align: center;
+}
+#mail{
+    font-size:initial;
+}
+#siteHeader{
+    max-width: 60%;
+    background-color: rgba(141, 49, 49,0.8);
+    border:solid;
+    border-color:firebrick;
+    margin:auto;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    text-align: center;
+
+}
+
+
+details{
+    font-weight: bold;
+    
+}
+dt{
+    font-weight: normal;
+}
+dd{
+    font-style: italic;
+}
+#minimum{
+    float:none;
+}
+#recommended{
+    float:none;
+}
+
+#smallBanner {
+    width: 200px;
+    font-size: calc(3px + 1vw);
+    padding: 10px;
+    border: none;
+    background: #f7e977;
+    color:#b08664;
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+#smallBanner:hover {
+    background: #b08664;
+    color: #f7e977;
+}
+
+a{
+    color:goldenrod;
+    font-size: 1em;
+}
+a:hover{
+    color:gold;
+    font-weight: bold;
+}
+
+#owo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    
+    transition: opacity 3s, width 0.1s;
+    -webkit-transition: opacity 3s, width 0.1s;
+    -moz-transition: opacity 3s, width 0.1s;
+}
+#owo.small{
+    width: 0%;
+    opacity:0;
+}
+#bowonia{
+    position: absolute;
+    top:25%;
+    left:0%;
+    width: 100%;
+    height: auto;
+    transition: position 1s, width 0.5s;
+    -webkit-transition: position 1s, width 0.5s;
+    -moz-transition:  position 1s, width 0.5s;
+}
+#bowonia.small{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+#smallBanner{
+    position: fixed;
+    left: 1%;
+    top:25px;
+    max-width: 15%;
+}
+
+@media screen and (min-width: 880px){
+
+    #bowonia.small{
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+    }
+    a{
+        font-size: 1.3em;
+    }
+    table{
+        width: 100%;
+    }
+    td{
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1em;
+    }
+    #smallBanner{
+        position: fixed;
+        left: 1%;
+        top:50%;
+        max-width: 5%;
+    }
+    #minimum{
+        float:left;
+    }
+    #recommended{
+        float:left;
+        padding-left: 5%;
+    }
+    #requirements{
+        overflow: hidden;
+    }
+
+}
+
+@media print{
+    .noprint{
+        display: none;
+    }
+
+    #siteHeader{
+        position: relative;
+        border: none;
+    }
+    body{
+        color:black;
+    }
+}
